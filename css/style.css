@@ -1,13 +1,17 @@
+/*  le 13/02/2022 --- ecran Disney+----------------*/
+
 body,html{
     margin: 0 0;
     padding: 0 0;
-    box-sizing: content-box;
+    background-color: rgba(0, 0, 255, 0.480);
 }
-
-h2{
-    margin: 2vh 0 0 2vw;
+#wrapper{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat auto (6,1fr);
+    grid-template-rows: 150px;
+    justify-content: center;
 }
-
 header{
     width: 100%;
     border: 2px solid #fff;
@@ -15,61 +19,36 @@ header{
     background: url("https://static.cnews.fr/sites/default/files/styles/image_640_360/public/scale_6040bdbe6a8ba_0.jpg?itok=q-PhIBNG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -90px;
+    background-position-y: -10px;
     height: 60vh;
-    margin: 2vh 2vw 0 2vw;
 }
 
 h1{
-    text-transform:uppercase;
     font-weight: bolder;
     position: absolute;
     top: 280px;
     left: 50px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2px;
-    grid-auto-rows: 20vh;
-    grid-auto-columns: minmax(400px,600px);
-    /* justify-content: center; */
+.bandeau1 {
+    display: flex;
+    flex-direction: row; 
+    grid-template-columns: 1 / 7;  
 }
 
-article {
-    width: 100%;
-    height: 40vh;
-}
-article figure{
-     border: black solid 5px;
+.bandeau2{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1 / 7;
 }
 
- article figure img{
-     width:90%;
-     height: 90%;
-     object-position: center;
-     object-fit: contain;
-     background: rgb(0, 0, 255);
-     border-radius: 15px;
-     padding: 1vh 1vw;
+figure{
+    background: rgb(0, 0, 255);
+    border-radius : 15px;
+    box-sizing: border-box;
+    border: solid blue 2px;
  }
 
- article figure img:hover{
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 255);
-}
-
-iframe{
-    border: 3px solid rgb(0, 68, 255);
-    border-radius: 15px;
-    height: 90%;
-    width: 90%;
-    max-width: 400px;
-}
-
-iframe:hover{
-    width: 100%;
-    height: 100%;
-}
+ iframe{
+     border-radius: 15px;
+ }
