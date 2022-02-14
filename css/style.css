@@ -3,52 +3,44 @@
 body,html{
     margin: 0 0;
     padding: 0 0;
-    background-color: rgba(0, 0, 255, 0.480);
-}
-#wrapper{
-    display: grid;
     box-sizing: border-box;
-    grid-template-columns: repeat auto (6,1fr);
-    grid-template-rows: 150px;
-    justify-content: center;
 }
+
+#wrapper{
+    text-align: center;
+    color: #fff;
+    display: grid;    
+    grid-template-columns: minmax(260px, max-content),(8,1fr);
+    grid-template-rows: 200px;
+    justify-content: center;
+    background: linear-gradient(rgb(25, 6, 199), rgba(10, 10, 10));
+}
+
 header{
     width: 100%;
     border: 2px solid #fff;
     border-radius: 15px;
-    background: url("https://static.cnews.fr/sites/default/files/styles/image_640_360/public/scale_6040bdbe6a8ba_0.jpg?itok=q-PhIBNG");
+    background: url("https://pic.clubic.com/v1/images/1096295/raw");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -10px;
-    height: 60vh;
+    background-position-y: -100px;
+    height: 40vh;
 }
 
-h1{
-    font-weight: bolder;
-    position: absolute;
-    top: 280px;
-    left: 50px;
-}
-
-.bandeau1 {
+.bandeau{
     display: flex;
     flex-direction: row; 
-    grid-template-columns: 1 / 7;  
-}
-
-.bandeau2{
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1 / 7;
+    grid-template-columns: 1 / 6;
+    padding: auto; 
 }
 
 figure{
-    background: rgb(0, 0, 255);
     border-radius : 15px;
-    box-sizing: border-box;
     border: solid blue 2px;
- }
+    width: 250px;
+}
 
  iframe{
      border-radius: 15px;
+    
  }
