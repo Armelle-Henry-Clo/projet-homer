@@ -23,7 +23,7 @@ header{
     background: url("https://pic.clubic.com/v1/images/1096295/raw");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -100px;
+    background-position-y: -200px;
     height: 40vh;
 }
 
@@ -43,4 +43,38 @@ figure{
  iframe{
      border-radius: 15px;
     
+ }
+
+ /*-----------Media queries----------
+ tablettes----*/
+
+ @media screen and (max-width:900px){
+
+    
+    header{
+        background: url("https://pic.clubic.com/v1/images/1096295/raw");
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+   
+    /* .bandeau{
+        display: flex;
+        flex-direction: column; 
+        padding: auto; 
+    } */
+
+ }
+
+ /*-------Smartphones---------*/
+
+ @media (max-width:400px){
+
+    
+    .bandeau{
+        display: flex;
+        flex-direction: column; 
+        padding: auto;
+        
+    }
+
  }
