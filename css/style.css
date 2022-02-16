@@ -1,43 +1,47 @@
 /*  le 13/02/2022 --- ecran Disney+----------------*/
-
-body,html{
+html{
     margin: 0 0;
     padding: 0 0;
-    box-sizing: border-box;
+    
+}
+
+.container{
+    margin: 0 0;
+    padding: 0 0; 
+    width: 100%; 
+    box-sizing: border-box;  
+    background: linear-gradient(rgb(25, 4, 210), rgb(21, 18, 109));
 }
 
 #wrapper{
     text-align: center;
     color: #fff;
     display: grid;    
-    grid-template-columns: minmax(260px, max-content),(8,1fr);
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
     justify-content: center;
-    background: linear-gradient(rgb(25, 6, 199), rgba(10, 10, 10));
+    height:100%;
+    
 }
 
 header{
     width: 100%;
+    margin:0 2vw 0 0;
     border: 2px solid #fff;
     border-radius: 15px;
-    background: url("https://pic.clubic.com/v1/images/1096295/raw");
+    background: url("../img/simpson2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -200px;
-    height: 40vh;
+    background-position-y: -100px;
+    height: 50vh;
 }
 
-.bandeau{
-    display: flex;
-    flex-direction: row; 
-    grid-template-columns: 1 / 6;
-    padding: auto; 
-}
 
 figure{
     border-radius : 15px;
     border: solid blue 2px;
-    width: 250px;
+    /* width: 250px; */
 }
 
  iframe{
@@ -46,35 +50,72 @@ figure{
  }
 
  /*-----------Media queries----------
- tablettes----*/
 
- @media screen and (max-width:900px){
+ grand écran*/
 
+ @media screen and (min-width:1590px){
+
+    #wrapper{
+        display: grid;    
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 200px;
+        
+        
+    } 
+    header{
+        background: url("../img/simpson1.jpeg");
+        background-repeat: no-repeat;
+        background-position-y: -300px;
+        background-size: cover;
+        height: 60vh;
+    }
+ }
+
+ @media screen and (max-width:1280px){
+
+    #wrapper{
+        display: grid;    
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 200px;
+
+    } 
+ }
+
+ /*tablettes----*/
+
+ @media (max-width:960px){
+
+    #wrapper{
+        display: grid;    
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+    }
     
     header{
-        background: url("https://pic.clubic.com/v1/images/1096295/raw");
+        background: url("../img/zapette.jpeg");
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-position-y: -30px;
+        background-size: 100%; 
+        height: 42vh;
     }
-   
-    /* .bandeau{
-        display: flex;
-        flex-direction: column; 
-        padding: auto; 
-    } */
-
  }
 
  /*-------Smartphones---------*/
 
- @media (max-width:400px){
+ @media (max-width:590px){
 
-    
-    .bandeau{
-        display: flex;
-        flex-direction: column; 
-        padding: auto;
+    header{
+        background: url("../img/maison.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: -120px;
+        height: 35vh;
         
+    }
+
+    #wrapper{   
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
     }
 
  }
