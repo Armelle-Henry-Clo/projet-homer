@@ -1,8 +1,10 @@
 # projet-homer
-FanPage Disney +  The simpsons
+FanPage The simpsons
 
-Copie de la page d'accueil Disney+
 
-Utilisation du grid en mobile first
+Création d'un simulacre de la page d'accueil Disney+
 
-Prochaine étape rajouter en Js un carrousel + effets au hoover
+
+-Utilisation du display grid pour réaliser un site 'mobile first'
+
+
